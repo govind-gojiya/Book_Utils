@@ -1,0 +1,68 @@
+{% extends 'base.html' %} {% block content %}
+<div class="list">
+  <table
+    class="table table table-success table-striped"
+    border="3"
+    cellspacing="0"
+    cellpadding=""
+  >
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Sr no</th>
+        <th scope="col">Book name</th>
+        <th scope="col">Writer Name</th>
+        <th scope="col">Publication</th>
+        <th scope="col">subject code</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td></td>
+        <td>
+          <input
+            type="button"
+            class="btn btn-dark"
+            value="Delete"
+            onClick="RemoveRow()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td></td>
+        <td>
+          <input
+            type="button"
+            class="btn btn-dark"
+            value="Delete"
+            onClick="RemoveRow()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        <td></td>
+        <td>
+          <input
+            type="button"
+            class="btn btn-dark"
+            value="Delete"
+            onClick="RemoveRow()"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock content %}

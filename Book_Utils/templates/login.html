@@ -1,0 +1,108 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div class="login">
+  <div class="form">
+
+    <ul class="top-area">
+      <center><li class="tab active"><a href="#signup" style="width: 35%;">Sign Up</a></li></center>
+      <center><li class="tab"><a href="#login" style="width: 35%;">Log In</a></li></center>
+    </ul>
+
+    <div class="tab-content">
+      <div id="signup">
+        <h1>Sign Up </h1>
+
+        <form action="/" method="post">
+
+          <div class="top-row">
+            <div class="label-field">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+
+            <div class="label-field">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="label-field">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" />
+          </div>
+
+          <div class="label-field">
+            <label>
+              City<span class="req">*</span>
+            </label>
+            <input type="name" />
+          </div>
+          <div class="label-field">
+            <label>
+              State<span class="req">*</span>
+            </label>
+            <input type="name" />
+          </div>
+          <div class="label-field">
+            <label>
+              College Name<span class="req">*</span>
+            </label>
+            <input type="name" />
+          </div>
+          <div class="label-field">
+            <label>
+              Branch<span class="req">*</span>
+            </label>
+            <input type="name" />
+          </div>
+          <div class="label-field">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" />
+          </div>
+
+
+          <button type="submit" class="button button-block" />Sign-Up</button>
+
+        </form>
+
+      </div>
+
+      <div id="login">
+        <h1>Welcome Back!</h1>
+
+        <form action="/" method="post">
+
+          <div class="label-field">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" />
+          </div>
+
+          <div class="label-field">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" />
+          </div>
+
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+          <button class="button button-block">Log In</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock content %}
